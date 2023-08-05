@@ -42,7 +42,7 @@ ul {
 }
 
 .card-container {
-  padding: 80px 20px 10px;
+  padding: 80px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

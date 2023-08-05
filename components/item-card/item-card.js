@@ -6,7 +6,7 @@ export default function createCard(data) {
               <img
               class="card__image"
               src="https://picsum.photos/id/${data.id}/500/300"
-              alt="${data.author}"
+              alt="A Photography by ${data.author}"
               loading="lazy"
               />
             <div class="card__content">
