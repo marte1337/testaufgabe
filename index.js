@@ -1,12 +1,32 @@
 import createCard from "./components/item-card/item-card.js";
+import createNavButton from "./components/nav-button/nav-button.js";
 
 const cardContainer = document.querySelector('[data-js="card-container"]');
-// const navigation = document.querySelector('[data-js="navigation"]');
+const navigation = document.querySelector('[data-js="navigation"]');
 
-async function fetchPhotos() {
+// States
+let maxPage = 42;
+let page = 1;
+
+// Components
+const prevButton = createNavButton("prev", () => {
+  if (page <= 1) return;
+  page--;
+  fetchImages();
+});
+
+const nextButton = createNavButton("next", () => {
+  if (page >= maxPage) return;
+  page++;
+  fetchImages();
+});
+
+navigation.append(prevButton, nextButton);
+
+async function fetchImages() {
   try {
     const response = await fetch(
-      "https://picsum.photos/v2/list?limit=10&page=3"
+      `https://picsum.photos/v2/list?limit=10&page=${page}`
     );
     if (response.ok) {
       const data = await response.json();
@@ -28,4 +48,4 @@ async function fetchPhotos() {
   }
 }
 
-fetchPhotos();
+fetchImages();
