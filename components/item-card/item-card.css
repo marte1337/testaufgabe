@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  color: var(--granite);
+  width: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  /* background-color: var(--water); */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card__content {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__content a {
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.card__content a:hover {
+  background-color: #45a049;
+}
