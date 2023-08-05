@@ -1,11 +1,35 @@
-.button {
+/* .button {
   background-color: var(--water);
   border: none;
   color: var(--granite);
   font-size: 1.2rem;
   transition: 0.3s ease;
 }
+} */
+
+/* 
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+} */
+
+.button {
+  background-color: white;
+  color: #4caf50;
+  padding: 10px 50px;
+  margin: 5px;
+  border: solid 2px #4caf50;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
 .button:hover {
-  background-color: var(--nemo);
+  background-color: #4caf50;
+  color: white;
+}
+
+.button:active {
+  transform: scale(0.98);
 }
