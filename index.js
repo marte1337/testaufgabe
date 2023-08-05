@@ -4,27 +4,10 @@ import createNavButton from "./components/nav-button/nav-button.js";
 const cardContainer = document.querySelector('[data-js="card-container"]');
 const navigation = document.querySelector('[data-js="navigation"]');
 
-window.addEventListener("scroll", function () {
-  let scrollY = window.scrollY;
-
-  // Add 'fixed' class when the user has scrolled down 100px
-  if (scrollY > 100) {
-    navigation.classList.add("fixed");
-  } else {
-    navigation.classList.remove("fixed");
-  }
-});
-
-// Function to scroll to the top of the page
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-// States
+// Navigation/Buttons
 let maxPage = 30;
 let page = 1;
 
-// Components
 const prevButton = createNavButton("prev", () => {
   if (page <= 1) return;
   page--;
@@ -39,10 +22,20 @@ const nextButton = createNavButton("next", () => {
   scrollToTop();
 });
 
-// prevButton.classList.add("disabled");
-// prevButton.classList.remove("disabled");
-
 navigation.append(prevButton, nextButton);
+
+window.addEventListener("scroll", function () {
+  let scrollY = window.scrollY;
+
+  if (scrollY > 100) {
+    navigation.classList.add("fixed");
+  } else {
+    navigation.classList.remove("fixed");
+  }
+});
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
 
 // Fetch
 async function fetchImages() {
