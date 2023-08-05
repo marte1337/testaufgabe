@@ -9,7 +9,7 @@
 
 :root {
   --granite: #252629;
-  --water: #f3f5f9;
+  --green: #4caf50;
   --foam: #ffffff;
 }
 
@@ -27,8 +27,8 @@ ul {
 }
 
 .title {
-  color: var(--granite);
-  background-color: var(--water);
+  color: white;
+  background-color: var(--green);
   text-align: center;
   font-size: 28px;
   padding: 15px;
@@ -48,15 +48,14 @@ ul {
   justify-content: space-around;
 }
 
-/* Responsive styles for different viewports */
 @media screen and (max-width: 768px) {
   .card-container {
-    justify-content: center; /* Center the cards on smaller viewports */
+    justify-content: center;
   }
 
   .card {
-    width: 100%; /* Reset the width to 100% on smaller viewports */
-    max-width: 500px; /* Limit the maximum width to 500px */
+    width: 100%;
+    max-width: 500px;
   }
 }
 
@@ -73,9 +72,9 @@ ul {
   background-color: transparent;
   color: white;
   position: fixed;
-  bottom: -100px; /* Initial position outside the viewport */
+  bottom: -100px;
   width: 100%;
-  transition: bottom 0.3s ease; /* Smooth transition when changing position */
+  transition: bottom 0.3s ease;
 }
 
 .navigation.fixed {
