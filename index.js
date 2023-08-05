@@ -6,7 +6,7 @@ const cardContainer = document.querySelector('[data-js="card-container"]');
 async function fetchPhotos() {
   try {
     const response = await fetch(
-      "https://picsum.photos/v2/list?limit=10&page=2"
+      "https://picsum.photos/v2/list?limit=10&page=3"
     );
     if (response.ok) {
       const data = await response.json();
