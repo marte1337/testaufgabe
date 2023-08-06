@@ -10,14 +10,18 @@ let maxPage = 99;
 
 // Navigation Buttons
 const prevButton = createNavButton("prev", () => {
-  if (page <= 1) return;
+  if (page <= 1) {
+    page = maxPage;
+  }
   page--;
   fetchImages();
   scrollToTop();
 });
 
 const nextButton = createNavButton("next", () => {
-  if (page >= maxPage) return;
+  if (page >= maxPage) {
+    page = 1;
+  }
   page++;
   fetchImages();
   scrollToTop();
