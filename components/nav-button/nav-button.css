@@ -1,20 +1,20 @@
 .button {
-  background-color: white;
-  color: #4caf50;
+  background-color: var(--white);
+  color: var(--green);
+  font-size: 16px;
   padding: 10px 50px;
   margin: 5px;
-  border: solid 2px #4caf50;
+  border: solid 2px var(--green);
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-  background-color: #4caf50;
-  color: white;
-  border: solid 2px white;
+  background-color: var(--green);
+  color: var(--white);
+  border: solid 2px var(--white);
 }
 
 .button:active {

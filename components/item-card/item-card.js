@@ -5,7 +5,8 @@ export default function createCard(data) {
             <div class='card__image-container'>
               <img
               class="card__image"
-              src="https://picsum.photos/id/${data.id}/500/300"
+              src="https://picsum.photos/id/${data.id}/640/360"
+              width="640" height="360"
               alt="A Photography by ${data.author}"
               loading="lazy"
               />
@@ -16,3 +17,5 @@ export default function createCard(data) {
     `;
   return card;
 }
+
+// src="https://picsum.photos/id/${data.id}/500/300"

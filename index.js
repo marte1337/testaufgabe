@@ -1,13 +1,16 @@
 import createCard from "./components/item-card/item-card.js";
 import createNavButton from "./components/nav-button/nav-button.js";
 
-const cardContainer = document.querySelector('[data-js="card-container"]');
-const navigation = document.querySelector('[data-js="navigation"]');
+const cardContainer = document.getElementById("cardContainer");
+const navigation = document.getElementById("navigation");
+// const cardContainer = document.querySelector('[data-js="card-container"]');
+// const navigation = document.querySelector('[data-js="navigation"]');
 
-// Navigation/Buttons
-let maxPage = 30;
+// State
 let page = 1;
+let maxPage = 30;
 
+// Navigation Buttons
 const prevButton = createNavButton("prev", () => {
   if (page <= 1) return;
   page--;
@@ -24,6 +27,7 @@ const nextButton = createNavButton("next", () => {
 
 navigation.append(prevButton, nextButton);
 
+// Navigation Appearance
 window.addEventListener("scroll", function () {
   let scrollY = window.scrollY;
 
@@ -33,6 +37,7 @@ window.addEventListener("scroll", function () {
     navigation.classList.remove("fixed");
   }
 });
+
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "auto" });
 }

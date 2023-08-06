@@ -8,15 +8,17 @@
 }
 
 :root {
+  --foam: #ffffff;
   --granite: #252629;
   --green: #4caf50;
-  --foam: #ffffff;
+  --secondarygreen: #45a049;
+  --white: white;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
 }
 
@@ -27,7 +29,7 @@ ul {
 }
 
 .title {
-  color: white;
+  color: var(--white);
   background-color: var(--green);
   text-align: center;
   font-size: 28px;
@@ -48,29 +50,12 @@ ul {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
-  .card-container {
-    justify-content: center;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-
-/* .navigation {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-} */
-
 .navigation {
   display: flex;
   justify-content: center;
   padding: 20px;
   background-color: transparent;
-  color: white;
+  color: var(--white);
   position: fixed;
   bottom: -100px;
   width: 100%;
