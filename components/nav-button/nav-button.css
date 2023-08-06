@@ -1,4 +1,4 @@
-.button {
+.navigation__button {
   background-color: var(--white);
   color: var(--green);
   font-size: 16px;
@@ -11,18 +11,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover {
+.navigation__button:hover {
   background-color: var(--green);
   color: var(--white);
   border: solid 2px var(--white);
 }
 
-.button:active {
+.navigation__button:active {
   transform: scale(0.98);
 }
-
-/* 
-.disabled {
-  pointer-events: none;
-  opacity: 0.6;
-} */
