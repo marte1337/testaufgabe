@@ -1,0 +1,11 @@
+.navigation__pagination {
+  background-color: var(--white);
+  color: var(--green);
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 5px;
+  border: solid 2px var(--green);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -11,11 +11,9 @@ export default function createCard(data) {
               loading="lazy"
               />
             <div class="card__content">
-              <p >Author: ${data.author}</p>
-              <a href="${data.download_url}" target="_blank">View Full-Res (${data.width} x ${data.height})</a>
+              <p class="card__content-text">Author: ${data.author}</p>
+              <a class="card__content-link" href="${data.download_url}" target="_blank">View Full-Res (${data.width} x ${data.height})</a>
             </div>
     `;
   return card;
 }
-
-// src="https://picsum.photos/id/${data.id}/500/300"

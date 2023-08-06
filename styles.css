@@ -1,5 +1,6 @@
 @import "./components/item-card/item-card.css";
 @import "./components/nav-button/nav-button.css";
+@import "./components/nav-pagination/nav-pagination.css";
 
 *,
 *::before,
@@ -64,4 +65,33 @@ ul {
 
 .navigation.fixed {
   bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    padding: 80px 0;
+  }
+
+  .card__content {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .card__content-text {
+    font-size: 14px;
+  }
+  .card__content-link {
+    font-size: 12px;
+  }
+
+  .navigation {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .navigation__pagination {
+    font-size: 12px;
+    padding: 10px;
+    margin: auto 2px;
+  }
 }
