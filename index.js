@@ -3,8 +3,6 @@ import createNavButton from "./components/nav-button/nav-button.js";
 
 const cardContainer = document.getElementById("cardContainer");
 const navigation = document.getElementById("navigation");
-// const cardContainer = document.querySelector('[data-js="card-container"]');
-// const navigation = document.querySelector('[data-js="navigation"]');
 
 // State
 let page = 1;
