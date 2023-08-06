@@ -6,7 +6,7 @@ const navigation = document.getElementById("navigation");
 
 // State
 let page = 1;
-let maxPage = 30;
+let maxPage = 99;
 
 // Navigation Buttons
 const prevButton = createNavButton("prev", () => {
